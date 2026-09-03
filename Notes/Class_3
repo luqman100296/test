@@ -40,3 +40,29 @@ print(f"Your age is {age}.")
 3. git push
 
 Tips: Got to root directory first
+
+# Conditional Statements
+
+# if-else: 2 conditions
+# if-elif-else: more than 2 conditions
+
+# Note: They are a pair and work as a logic
+# Note: Use the pairing as per the sequence above
+
+age = 18 
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+score = 85
+
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+else:
+    grade = "Failure to Humanity"

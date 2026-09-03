@@ -39,40 +39,71 @@
 
 # print("Result:", result)
 
-score = 0
-options = ["A", "B", "C", "D"]
+# score = 0
+# options = ["A", "B", "C", "D"]
 
-# Question 1
-print("1) What is the capital of France?")
-print("A) Jakarta  B) Las Vegas  C) Paris  D) London")
-answer = ""
-while answer not in options:
-    answer = input("Choose an answer (A, B, C, D): ").upper()
-    if answer not in options:
-        print("Invalid choice, try again.")
-if answer == "C":
-    score += 1
+# # Question 1
+# print("1) What is the capital of France?")
+# print("A) Jakarta  B) Las Vegas  C) Paris  D) London")
+# answer = ""
+# while answer not in options:
+#     answer = input("Choose an answer (A, B, C, D): ").upper()
+#     if answer not in options:
+#         print("Invalid choice, try again.")
+# if answer == "C":
+#     score += 1
 
-# Question 2
-print("2) What is 5 + 3?")
-print("A) 6  B) 8  C) 20  D) 11")
-answer = ""
-while answer not in options:
-    answer = input("Choose an answer (A, B, C, D): ").upper()
-    if answer not in options:
-        print("Invalid choice, try again.")
-if answer == "B":
-    score += 1
+# # Question 2
+# print("2) What is 5 + 3?")
+# print("A) 6  B) 8  C) 20  D) 11")
+# answer = ""
+# while answer not in options:
+#     answer = input("Choose an answer (A, B, C, D): ").upper()
+#     if answer not in options:
+#         print("Invalid choice, try again.")
+# if answer == "B":
+#     score += 1
 
-# Question 3
-print("3) What is Luqman's favourite food?")
-print("A) Nasi Goreng  B) Pizza  C) Sushi  D) Steak")
-answer = ""
-while answer not in options:
-    answer = input("Choose an answer (A, B, C, D): ").upper()
-    if answer not in options:
-        print("Invalid choice, try again.")
-if answer == "D":
-    score += 1
+# # Question 3
+# print("3) What is Luqman's favourite food?")
+# print("A) Nasi Goreng  B) Pizza  C) Sushi  D) Steak")
+# answer = ""
+# while answer not in options:
+#     answer = input("Choose an answer (A, B, C, D): ").upper()
+#     if answer not in options:
+#         print("Invalid choice, try again.")
+# if answer == "D":
+#     score += 1
 
-print("Total correct:", score)
+# print("Total correct:", score)
+
+age = 18 
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+score = 20
+
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+else:
+    grade = "Failure to Humanity"
+
+print(f"Your grade is: {grade}")
+
+user_age = int(input("Enter your age: "))
+has_license = input("Do you have license (True or False): ")
+
+if user_age >= 18 and has_license == "True":
+    print("You are allowed to drive")
+else:
+    print("You are not allowed to drive")
+
+
+
