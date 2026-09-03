@@ -1,0 +1,42 @@
+# Why is it called break the logic when it is right?
+    # You break the logic when the logic works, so you can go to the next logic
+# Difference logic usage between else (only for same data type) and except (for different data type)?
+    # Try and Except is a pair
+    # If and Else is a pair (also has elif)
+# Inquire more on e Exception
+
+name = input("enter your name: ")
+# The above is the most basic components for input.
+# Name is the variable. input is the function. "enter your name: " is the prompt.
+
+height = float(input("Enter your height in meters: "))
+# The above is a similar component for input, but by adding "float" there, you restrict the data type to only accept float data type. If you enter a string, it will break the logic and give you an error.
+
+#Input Validation
+while True:
+    try:
+        age = int(input("Enter your age: "))
+        if age > 0:
+            break
+        else:
+            print("Please enter a positive number.")
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+
+# As mentioned above, the "try" and "except" is a pair. The "try" is where you put the logic that you want to test, and the "except" is where you put the logic that will be executed if the "try" logic fails. 
+# In this case, if the user enters a string instead of an integer, it will raise a ValueError and the code in the "except" block will be executed, prompting the user to enter a valid number.    
+
+#Output Validation
+print(f"Hello, {name}!")
+print(f"Your height is {height} meters.")
+print(f"Your age is {age}.")
+
+# As for the above, we just create f-string for output.
+
+# How to update repository
+
+1. git add .
+2. git commit -m "Push Name"
+3. git push
+
+Tips: Got to root directory first
