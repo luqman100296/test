@@ -1,0 +1,62 @@
+CONDITIONAL STATEMENTS
+
+TYPES
+if-else: 2 outcomes
+if-elif-else: more than 2 outcomes
+Nested conditions: a condition inside another condition
+
+COMPARISON OPERATORS
+== equal to
+!= not equal
+> greater than
+< less than
+>= greater or equal
+<= less or equal
+
+LOGICAL OPERATORS
+
+and: both conditions must be True
+or: at least one condition must be True
+not: reverses a condition
+
+BASIC SYNTAX
+
+if condition:
+    # code
+elif another_condition:
+    # code
+else:
+    # code
+
+NESTED EXAMPLE
+
+age = 20
+has_id = True
+
+if age >= 18:
+    if has_id:
+        print("Entry allowed")
+    else:
+        print("Need ID")
+else:
+    print("Too young")
+
+EXERCISE: BMI CATEGORIZER
+
+weight = float(input("Enter weight (kg): "))
+height = float(input("Enter height (m): "))
+
+bmi = weight / (height ** 2)
+
+if bmi < 18.5:
+    category = "Underweight"
+elif bmi < 24.9:
+    category = "Normal weight"
+elif bmi < 29.9:
+    category = "Overweight"
+else:
+    category = "Obesity"
+
+print(f"BMI: {bmi:.1f} ({category})")
+
+

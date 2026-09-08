@@ -1,0 +1,52 @@
+VARIABLE DATA TYPE
+
+BASIC COMPONENT
+
+name = "Luqman"
+
+name is a variable.
+Luqman is a data
+
+DATA TYPE
+
+name = "Luqman" 
+age = 40
+height = 1.80
+is_handsome = True
+
+MATH OPERATIONS
+
+print(x + y) # Addition
+print(x - y) # Subtraction
+print(x * y) # Multiplication
+print(x / y) # Division
+print(x // y) # Floor Division
+print(x % y) # Modulus
+print(x ** y) #Exponentiation
+
+Floor Division = Divides and rounds down to the nearest whole number (drops the decimal).
+
+7 // 2    # 3 (not 3.5)
+
+Modulus = Gives the remainder after division.
+Very common use: checking if a number is even or odd.
+
+7 % 2     # 1 (7 divided by 2 is 3 remainder 1) 
+Think about it as there are (2 + 2 + 2 + 1 = 7), so modulus gives you the "balance" which is 1.
+
+if n % 2 == 0: #refering to the above
+    print("even")
+
+
+Exponentiation = Raises a number to a power.
+
+2 ** 3    # 8 (2 x 2 x 2); basic language: 2 to the power of 3.
+
+EXERCISE 1
+
+c = 25
+f = (c * 9 / 5 + 32)
+print(f)
+
+
+

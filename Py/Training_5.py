@@ -25,6 +25,8 @@
 #     if is_prime:
 #         print(num)
 
+# List Operations Exercise
+
 # grocery = ["Fish", "Meat", "Broccoli", "Watermelon"]
 
 # print(grocery)
