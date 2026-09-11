@@ -35,9 +35,12 @@ Careful: forgetting to update the condition variable causes an infinite loop.
 
 LOOP CONTROL STATEMENTS
 
-break: exits the loop immediately
+break: exits the loop immediately.
 continue: skips to the next iteration
 pass: does nothing, just a placeholder
+
+Protip: Need to pay extra attention on the indentation and to whom the control statement belongs to.
+- If the control statement belongs to an inner loop, the outer loop will still be able to run again.
 
 for i in range(10):
     if i == 5:
@@ -46,7 +49,7 @@ for i in range(10):
         continue    # skips even numbers
     print(i)
 
-Exercises from the slide
+EXERCISES FROM THE SLIDE
 
 1. Multiplication table generator
 
@@ -77,6 +80,6 @@ Explanation:
 - The third line is a boolean operator to and part of the conditional statement. It sets the first condition for the data.
 - The forth line is basically in reference to the second line, it is another loop that will be divided with num - the data would be 2 to num.
 - The fifth line is also another conditional statement, the math operation that goes with it is Modulus, where it will return 0 if there's no remainder after division.
-- The sixth line is indented under the fifth line, so for any number between 2 to 20 that can be divided without any remainer with the for loop under the forth line, is not a prime number. And being denoted as False by the boolean operator.
-- The seventh line is loop control statement, break will stop the loop.
-- 
+- The sixth line is indented under the fifth line, so for any number between 2 to 20 that can be divided without any remainder with the for loop under the forth line, is not a prime number. And being denoted as False by the boolean operator.
+- The seventh line is loop control statement, break will stop the loop. It will break in accordance to the above line, which is if is_prime = False, then the logic break
+- The last two lines just print the number for the verified prime numbers.

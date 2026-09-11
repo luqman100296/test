@@ -1,0 +1,111 @@
+LISTS, TUPLES, SETS
+
+1. LISTS [...]
+
+A list is an ordered, changeable collection. Most common data structure you'll use.
+
+fruits = ["apple", "banana", "cherry"]
+
+Key Traits
+- Ordered (items keep their position)
+- Mutable (you can add, remove and change items)
+- Allow duplicates
+
+CRUD operations
+
+# Create
+fruits = ["apple", "banana"]
+
+# Read
+print(fruits[0]) # will print apple
+print(fruits[-1]) # will print banana (last item)
+print(fruits[0:2]) # slice will print the first two only
+
+# Update
+fruits[1] = "blueberry"
+
+# Add
+fruits.append("cherry") # add to end 
+fruits.insert(1, "mango) # add at position
+
+# Delete
+fruits.remove("apple") # remove by value
+fruits.pop() # remove last item
+del fruits [0] # remove by index
+
+Other Useful Methods *All needed to be paired with a variable
+
+len(fruits) # count items
+fruits.sort() # sort in place
+fruits.reverse() # reverse order
+"apple" in fruits # check if exists (True/False)
+set(...) # takes any list and drops the duplicates automatically. Order isn't kept since sets are unordered.
+
+Use Case
+- Default choice when you need an ordered collection you'll modify (shopping list, list of scores, queue of tasks)
+
+2. TUPLES (...)
+
+A tuple looks like a list but cannot be changed after creation
+
+point = (10, 20)
+
+Key Traits
+- Ordered
+- Immutable (cannot add, remove, or change items after creation)
+- Allow duplicates
+- Slightly faster than lists
+
+Usage
+
+point = (10, 20)
+print(point[0])
+
+Use Case:
+Fixed data that should not change, like coordinates, RGB colors, or a date.
+You can't Create, Update and Delete it. Only read.
+
+3. SETS
+
+A set is an unordered collection of unique items. No duplicates allowed.
+
+colors = {"red", "green", "blue"}
+
+Key Traits:
+- Unordered (non indexing like colors[0])
+- No duplicate values
+- Mutable (can add/remove items)
+
+Operations:
+colors = {"red", "green"}
+colors.add("blue")
+colors.remove("red")
+"green" in colors # Check if exists
+
+Set Math (Useful For Comparing Group)
+
+a = {1, 2, 3}
+b = {2, 3, 4}
+
+a | b   # union: {1, 2, 3, 4}
+a & b   # intersection: {2, 3}
+a - b   # difference: {1}
+a ^ b   # symmetric difference: {1, 4} Items that are in one set OR the other, but not in both. It removes the overlap.
+
+When To Use:
+Removing duplicates from data, or checking membership/overlap quickly (e.g. unique visitors, common tags between two posts.)
+
+QUICK COMPARISON
+
+| Feature      | List `[]` | Tuple `()` | Set `{}` |
+|--------------|-----------|------------|----------|
+| Ordered      | Yes       | Yes        | No       |
+| Mutable      | Yes       | No         | Yes      |
+| Duplicates   | Can       | Can        | Cannot   |
+| Indexing     | Yes       | Yes        | No       |
+
+RULE OF THUMB:
+- Need order and plan to change it? Use a list.
+- Need order but data is fixed? Use a tuple.
+- Need uniqueness, don't care about order? Use a set.
+

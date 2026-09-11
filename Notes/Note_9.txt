@@ -1,0 +1,58 @@
+DICTIONARIES
+
+DICTIONARY BASICS
+
+A dictionary stores data as key-value pairs. Keys must be unique. Values can repeat.
+
+student = {
+    "name": "John",
+    "age": 19,
+    "major": "Computer Science"
+}
+
+or 
+
+student = {"name": "John", "age": 19, "major": "Computer Science"}
+
+- name is key, John is value. Key must be unique per dictionary.
+
+ACCESS AND UPDATE
+
+print(student["name"])       # John
+student["age"] = 20          # update
+student["grades"] = [85, 92] # add new key
+students["student_003"] = {"name": "Mike", "age": 18, "major": "Math", "grade": [82, 79, 91]} # To add a new key to a nested loop and if it has multiple values per key
+
+COMMON METHODS
+
+student.get("name")       # safe access, no error if missing
+student.keys()             # all keys
+student.values()           # all values
+student.items()            # key-value pairs
+student.pop("age")         # remove a key
+
+ITERATING
+
+for key, value in student.items():
+    print(key, value)
+
+NESTED DICTIONARIES
+
+A dictionary can hold other dictionaries as values.
+
+students = {
+    "student_001": {"name": "John", "age": 19},
+    "student_002": {"name": "Sarah", "age": 20}
+}
+
+print(students["student_001"]["name"])  # John
+
+PROTIP
+
+Accessing Values, Two Ways
+
+person["name"]        # works, but crashes if "name" doesn't exist
+person.get("name")    # safer, returns None instead of crashing
+
+# Use .get() when you're not sure the key exists.
+
